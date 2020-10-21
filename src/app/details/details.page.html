@@ -1,0 +1,88 @@
+
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title > Firebugs</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-searchbar 
+mode="ios"
+showCancelButton="focus" 
+cancelButtonText="Cancel" 
+placeholder="Search Contenstants"
+animated
+[(ngModel)]="searchTerm" (ionChange)="setFilteredItems()"></ion-searchbar>
+
+
+
+<div class= "parent">
+  <ion-card mdbScrollSpyElement="scrollspy4">
+    <ion-card-subtitle >Vuyokazi Thebe</ion-card-subtitle> 
+    <img src="../../assets/imgs/vuyo1.png"/>
+    <ion-button (click)="presentToast()" expand="block" color="primary">Vote</ion-button>
+  </ion-card>
+
+  <ion-card mdbScrollSpyElement="scrollspy4">
+    <ion-card-subtitle >Karabo Aphane</ion-card-subtitle>
+    <img src="../../assets/imgs/karabo.jpeg"/>
+    
+    <ion-button (click)="presentToast()" expand="block">Vote</ion-button>
+   
+  </ion-card>
+
+  <ion-card mdbScrollSpyElement="scrollspy4">
+    <ion-card-subtitle >Kuroana Mamabolo</ion-card-subtitle> 
+    <img src="../../assets/imgs/sam.jpeg"/>
+    <ion-button (click)="presentToast()" expand="block">Vote</ion-button>
+  </ion-card>
+
+  <ion-card mdbScrollSpyElement="scrollspy4">
+    <ion-card-subtitle >Neo Power</ion-card-subtitle> 
+    <img src="../../assets/imgs/Neo.jpeg"/>
+    <ion-button (click)="presentToast()" expand="block">Vote</ion-button>
+  </ion-card>
+
+  <!-- <ion-card mdbScrollSpyElement="scrollspy4">
+    <img src="../../assets/imgs/idols.jpg"/>
+    <ion-button expand="block" routerLink="/contenstants">View Contenstants</ion-button>
+  </ion-card>
+
+  <ion-card mdbScrollSpyElement="scrollspy4">
+    <img src="../../assets/imgs/mob.png"/>
+    <ion-button expand="block"  routerLink="/contenstants">View Contenstants</ion-button>
+  </ion-card> -->
+
+  
+</div>
+<!-- </ion-content> -->
+
+  
+    
+  
+
+<ion-footer>
+<!-- <ion-tabs> -->
+  <ion-tab-bar slot="bottom" routerLink="/products">
+    <ion-tab-button tab="schedule">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers" routerLink="/leaderboard">
+      <ion-icon name="trophy"></ion-icon>
+      <ion-label>Leaderboard</ion-label>
+    </ion-tab-button>
+
+
+    <ion-tab-button tab="" (click)="logout()">
+      <ion-icon name="log-out"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+<!-- </ion-tabs> -->
+</ion-footer>
+<!-- <ion-footer (click)="logout()">
+  <ion-toolbar color="medium">
+    <ion-title>Log out</ion-title>
+  </ion-toolbar>
+</ion-footer> -->

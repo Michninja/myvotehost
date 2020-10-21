@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Leaderboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+        <div class= "parent">
+          <ion-card mdbScrollSpyElement="scrollspy4">
+            <img src="../../assets/imgs/Neo.jpeg"/>
+            <ion-card-subtitle>Neo Power</ion-card-subtitle>
+            <ion-card-title >500+ Votes</ion-card-title> 
+          </ion-card>
+        </div>
+
+      <ion-footer>
+        <!-- <ion-tabs> -->
+          <ion-tab-bar slot="bottom" routerLink="/products">
+            <ion-tab-button tab="schedule">
+              <ion-icon name="home"></ion-icon>
+              <ion-label>Home</ion-label>
+            </ion-tab-button>
+        
+            <ion-tab-button tab="speakers" routerLink="/leaderboard">
+              <ion-icon name="trophy"></ion-icon>
+              <ion-label>Leaderboard</ion-label>
+            </ion-tab-button>
+        
+            
+        
+            <ion-tab-button tab="" (click)="logout()">
+              <ion-icon name="log-out"></ion-icon>
+              <ion-label>Logout</ion-label>
+            </ion-tab-button>
+          </ion-tab-bar>
+        <!-- </ion-tabs> -->
+        </ion-footer>

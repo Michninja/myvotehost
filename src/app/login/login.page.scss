@@ -1,0 +1,29 @@
+.error-message
+{
+ color: var(--ion-color-danger);
+}
+
+.go-to-register
+{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-btn
+{
+  margin-top: 40px;
+  background-color: #e3433a;
+}
+// .head {
+//   min-height: 200vh;
+// }
+.head-image {
+  background-size: cover;
+  // width: 900px;
+  // height: 300px;
+ 
+}
+.form-content{
+  padding-bottom: 2%;
+  padding-inline-start:inherit;
+}

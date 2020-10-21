@@ -1,0 +1,19 @@
+.parent{
+    display: grid;
+    column-gap: 5px;
+    row-gap: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+    color:#e3433a;
+  }
+  .parent img{
+   width:200px;
+   height:150px ;
+  }
+  ion-icon{
+    color: #e3433a;
+  }
+  .routerLink{
+    justify-content: center;
+  }
+  

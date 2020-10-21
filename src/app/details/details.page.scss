@@ -1,0 +1,27 @@
+.submit-button {
+  margin-top: 40px;
+}
+// .delete-button {
+//   // margin-top: 20px;
+// }
+// body{
+//   background-color:#cccccc;
+// }
+.parent{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 5px;
+  row-gap: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.parent img{
+ width:200px;
+ height:150px ;
+}
+ion-icon{
+  color: #e3433a;
+}
+.routerLink{
+  justify-content: center;
+}
